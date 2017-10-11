@@ -32,6 +32,7 @@ nav {
 }
 
 .mainContent {
+  width: 100%;
   float: left;
   min-height: 600px;
   background: #cccccc;
@@ -78,11 +79,40 @@ nav ul li a:hover {
 }
 
 section {
-  width: calc(33.33% - 10px);
+  width: calc( 33.33% - 10px);
   height: 100px;
   float: left;
   box-sizing: border-box;
-  border: 3px red solid;
   margin: 5px;
-  padding: 10px;
+}
+
+@media print {
+  section {
+    border: 3px grey solid !important;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    background: red;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background: green;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    background: blue;
+  }
 }
