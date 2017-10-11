@@ -13,7 +13,7 @@ html {
 }
 
 html {
-  background: grey;
+  background: #d3d3d3;
 }
 
 header {
@@ -35,7 +35,7 @@ nav {
   width: 100%;
   float: left;
   min-height: 600px;
-  background: #cccccc;
+  background: white;
 }
 
 footer {
@@ -83,6 +83,7 @@ section {
   height: 100px;
   float: left;
   box-sizing: border-box;
+  border: 1px red solid;
   margin: 5px;
 }
 
@@ -96,17 +97,22 @@ section {
   header {
     background: red;
   }
+  .wrapper {
+    width: 100%;
+  }
+  section {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
 }
 
 @media (max-width: 600px) {
   header {
     background: green;
   }
-  .wrapper {
-    width: 100%;
-  }
   section {
     width: 100%;
+    margin: 0 0 5px 0;
     float: none;
   }
 }
